@@ -1,0 +1,7 @@
+La serialización Nativa de Java
+
+Es un mecanismo interno de Java que convierte un objeto en un flujo de bytes.
+Lo hace para poder guardar ese objeto en un archivo del disco duro o enviarlo a través de una red a otro programa.
+Pero lo malo es que: el archivo resultante es binario, no se puede abrir con un bloc de notas para ver qué hay dentro,
+ese archivo binario solo puede ser leído y reconstruido por otro programa que también esté hecho en Java y que guarda la versión
+exacta de la clase lo que es un problema porque si luego lo modificas dará error.

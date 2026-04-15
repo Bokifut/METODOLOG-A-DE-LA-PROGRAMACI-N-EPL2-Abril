@@ -1,0 +1,20 @@
+¿Qué obtienes? ¿Por qué existe esa diferencia?
+En: java -jar TuFichero.jar Hola Mundo Cruel
+Argumentos:
+Argumento 0: Hola
+Argumento 1: Mundo
+Argumento 2: Cruel
+
+En: java -jar TuFichero.jar "Hola Mundo Cruel"
+Argumentos:
+Argumento 0: Hola Mundo Cruel
+
+¿Por qué existe esa diferencia?
+La diferencia radica en cómo la consola interpreta los espacios.
+
+En el primer caso, la consola usa los espacios como separadores.
+Por lo tanto, entiende que le estás pasando tres parámetros distintos
+y los guarda en las posiciones 0, 1 y 2 del array args.
+
+En el segundo caso, al usar comillas dobles "", le estás indicando
+a la consola que hay una cadena indivisible, por lo que lo guarda en la posicion 0 del array
